@@ -1,0 +1,18 @@
+
+<div *ngIf="!isLogged">
+<div class="container">
+  <div class="row">
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="email" name="username" class="form-control" [(ngModel)]='logins.username' >
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" [(ngModel)]='logins.password'  >
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="onLogin()" >Submit</button>
+    </form>
+  </div>
+</div>
+</div>
